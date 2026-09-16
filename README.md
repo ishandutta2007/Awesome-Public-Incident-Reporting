@@ -93,7 +93,7 @@ We welcome contributions from public safety practitioners, software developers, 
 
 1. 🔀 **Fork** the repository.
 2. 📝 **Add or update** entries in `README.md` following our structured tabular format.
-3. 🔎 Ensure all links, descriptions, pricing facts, and star badges are accurate.
+3. 🔎 Ensure all links, descriptions, pricing facts, and Stars_Badges are accurate.
 4. 🚀 **Submit a Pull Request (PR)** with a clear summary of your changes.
 
 Check out [Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome) for more curated lists!

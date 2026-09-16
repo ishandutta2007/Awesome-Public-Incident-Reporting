@@ -70,7 +70,7 @@ This repository tracks notable **SaaS platforms** and **open-source projects** f
 
 *Open-source options for public safety data analysis, incident tracking, emergency response, and police accountability. Repositories are sorted by **GitHub Star Count (Descending)**.*
 
-| Repository | Stars | Description | Focus Area |
+| Repository | Github_Stars | Description | Focus Area |
 | :--- | :--- | :--- | :--- |
 | **[cuckoosandbox/cuckoo](https://github.com/cuckoosandbox/cuckoo)** | [<img src="https://img.shields.io/github/stars/cuckoosandbox/cuckoo?style=social&color=white" alt="cuckoo stars"/>](https://github.com/cuckoosandbox/cuckoo/stargazers) | Automated malware analysis and digital forensic investigation sandbox useful for cyber incident response. | Digital Forensics / Cyber Incident Response |
 | **[TheHive-Project/TheHive](https://github.com/TheHive-Project/TheHive)** | [<img src="https://img.shields.io/github/stars/TheHive-Project/TheHive?style=social&color=white" alt="TheHive stars"/>](https://github.com/TheHive-Project/TheHive/stargazers) | Scalable, open-source Security Incident Response Platform (SIRP) tightly integrated with MISP and case management. | Incident Response & Case Management |

@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <radialGradient id="pulse-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+
+    <style>
+      .title { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 800; font-size: 46px; fill: #ffffff; }
+      .subtitle { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 500; font-size: 20px; fill: #94a3b8; }
+      .badge-text { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 14px; fill: #38bdf8; }
+      
+      @keyframes pulse {
+        0% { transform: scale(0.95); opacity: 0.5; }
+        50% { transform: scale(1.1); opacity: 0.9; }
+        100% { transform: scale(0.95); opacity: 0.5; }
+      }
+      
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+        100% { transform: translateY(0px); }
+      }
+
+      @keyframes dash {
+        to { stroke-dashoffset: -40; }
+      }
+
+      .animated-pulse { animation: pulse 3s infinite ease-in-out; transform-origin: 150px 150px; }
+      .animated-float { animation: float 4s infinite ease-in-out; }
+      .animated-grid { stroke-dasharray: 8 8; animation: dash 20s linear infinite; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" rx="16" fill="url(#bg-grad)"/>
+  
+  <!-- Subtle Grid Lines -->
+  <g stroke="#334155" stroke-width="1" stroke-opacity="0.4" class="animated-grid">
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="200" y1="0" x2="200" y2="300" />
+    <line x1="400" y1="0" x2="400" y2="300" />
+    <line x1="600" y1="0" x2="600" y2="300" />
+    <line x1="800" y1="0" x2="800" y2="300" />
+    <line x1="1000" y1="0" x2="1000" y2="300" />
+  </g>
+
+  <!-- Glow Effect -->
+  <circle cx="150" cy="150" r="120" fill="url(#pulse-glow)" class="animated-pulse" />
+
+  <!-- Shield / Incident Icon Graphic -->
+  <g class="animated-float" transform="translate(40, 40)">
+    <!-- Outer Shield -->
+    <path d="M110 30 L180 60 V130 C180 185 110 220 110 220 C110 220 40 185 40 130 V60 Z" 
+          fill="none" stroke="url(#accent-grad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Inner Alert Node Network -->
+    <circle cx="110" cy="95" r="8" fill="#38bdf8" />
+    <circle cx="80" cy="140" r="6" fill="#818cf8" />
+    <circle cx="140" cy="140" r="6" fill="#c084fc" />
+    
+    <line x1="110" y1="95" x2="80" y2="140" stroke="#38bdf8" stroke-width="3" stroke-opacity="0.8" />
+    <line x1="110" y1="95" x2="140" y2="140" stroke="#38bdf8" stroke-width="3" stroke-opacity="0.8" />
+    <line x1="80" y1="140" x2="140" y2="140" stroke="#818cf8" stroke-width="3" stroke-opacity="0.6" />
+  </g>
+
+  <!-- Content Header -->
+  <g transform="translate(260, 85)">
+    <!-- Category Pill -->
+    <rect width="260" height="32" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="130" y="21" text-anchor="middle" class="badge-text">🛡️ PUBLIC SAFETY &amp; ACCOUNTABILITY</text>
+
+    <!-- Main Title -->
+    <text x="0" y="82" class="title">Awesome Public Incident Reporting</text>
+
+    <!-- Gradient Bar Line -->
+    <rect y="102" width="680" height="4" rx="2" fill="url(#accent-grad)"/>
+
+    <!-- Subtitle -->
+    <text x="0" y="140" class="subtitle">Curated SaaS Platforms, Open-Source Tools &amp; Internal Affairs Solutions</text>
+  </g>
+</svg>
